@@ -33,15 +33,17 @@ const LanguageSwitcher = () => {
   return (
     <div className="relative" ref={ref}>
       <button
-        className="flex items-center gap-2 px-3 py-2 rounded hover:bg-[#23263a] transition-colors"
+        className="flex items-center gap-2 px-3 py-2 rounded hover:bg-[#23263a] transition-colors text-2xl"
         onClick={() => setOpen((v) => !v)}
       >
-        <MdLanguage className="text-xl" />
-        <span className="text-lg">{current.flag}</span>
-        <span>{current.label}</span>
+        <MdLanguage className="text-2xl" />
+        <h3 className="font-extrabold  flex items-center gap-2">
+         
+            Language
+          </h3>
       </button>
       {open && (
-        <div className="absolute left-0 mt-2 w-40 bg-[#23263a] text-white rounded shadow-lg z-10">
+        <div className="w-40 text-white rounded shadow-lg z-10 mt-0.4 flex flex-col items-center  ml-4  right-0">
           {languages.map((lang) => (
             <button
               key={lang.code}

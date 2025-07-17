@@ -106,7 +106,39 @@ const resources = {
       },
       "tech": "Tech",
       "works": "Works",
+      "language": "Language",
       // Thêm các key khác nếu cần
+      "footer": {
+        "info": "Info",
+        "formats": "Formats",
+        "compression": "Compression",
+        "pricing": "Pricing",
+        "faq": "FAQ",
+        "status": "Status",
+        "policy": "Policy",
+        "getting_started": "Getting Started",
+        "introduction": "Introduction",
+        "themes": "Themes",
+        "documentation": "Documentation",
+        "usages": "Usages",
+        "elements": "Elements",
+        "global": "Global",
+        "resources": "Resources",
+        "api": "API",
+        "form_validation": "Form Validation",
+        "accessibility": "Accessibility",
+        "marketplace": "Marketplace",
+        "visibility": "Visibility",
+        "community": "Community",
+        "newsletter": "Newsletter",
+        "newsletter_desc": "Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.",
+        "email_placeholder": "Your email",
+        "subscribe": "SUBSCRIBE"
+      },
+      "hero": {
+        "greeting": "Hi, I'm <1>Macchu</1>",
+        "description": "I develop 3D visuals, user interfaces and web applications"
+      }
     }
   },
   vi: {
@@ -213,7 +245,39 @@ const resources = {
       },
       "tech": "Công nghệ",
       "works": "Công việc",
+      "language": "Ngôn ngữ",
       // Thêm các key khác nếu cần
+      "footer": {
+        "info": "Thông tin",
+        "formats": "Định dạng",
+        "compression": "Nén",
+        "pricing": "Bảng giá",
+        "faq": "Câu hỏi thường gặp",
+        "status": "Trạng thái",
+        "policy": "Chính sách",
+        "getting_started": "Bắt đầu",
+        "introduction": "Giới thiệu",
+        "themes": "Giao diện",
+        "documentation": "Tài liệu",
+        "usages": "Cách dùng",
+        "elements": "Thành phần",
+        "global": "Toàn cục",
+        "resources": "Tài nguyên",
+        "api": "API",
+        "form_validation": "Kiểm tra biểu mẫu",
+        "accessibility": "Truy cập",
+        "marketplace": "Chợ ứng dụng",
+        "visibility": "Hiển thị",
+        "community": "Cộng đồng",
+        "newsletter": "Bản tin",
+        "newsletter_desc": "Đăng ký nhận bản tin để nhận tin tức, cập nhật, mẹo hữu ích và ưu đãi độc quyền hàng tuần.",
+        "email_placeholder": "Email của bạn",
+        "subscribe": "ĐĂNG KÝ"
+      },
+      "hero": {
+        "greeting": "Xin chào, tôi là <1>Macchu</1>",
+        "description": "Tôi phát triển giao diện 3D, ứng dụng web và trải nghiệm người dùng"
+      }
     }
   }
 };

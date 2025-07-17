@@ -5,13 +5,12 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 import LanguageSwitcher from "./LanguageSwitcher";
-import SettingsDrawer from "./SettingsDrawer";
+// import SettingsDrawer from "./SettingsDrawer";
 
-const Navbar = () => {
+const Navbar = ({ settingsOpen, setSettingsOpen }) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [settingsOpen, setSettingsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,9 +56,19 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[16px] md:text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => {
+                setActive(nav.title);
+                if (nav.id === "footer") {
+                  const footer = document.getElementById("footer");
+                  if (footer) footer.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.id === "footer" ? (
+                <span>Footer</span>
+              ) : (
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              )}
             </li>
           ))}
           <li>
@@ -74,7 +83,7 @@ const Navbar = () => {
             </button>
           </li>
         </ul>
-        <SettingsDrawer open={settingsOpen} onClose={() => setSettingsOpen(false)} />
+        {/* Không render SettingsDrawer ở đây nữa */}
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
@@ -99,9 +108,17 @@ const Navbar = () => {
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
+                    if (nav.id === "footer") {
+                      const footer = document.getElementById("footer");
+                      if (footer) footer.scrollIntoView({ behavior: "smooth" });
+                    }
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.id === "footer" ? (
+                    <span>Footer</span>
+                  ) : (
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  )}
                 </li>
               ))}
               <li>

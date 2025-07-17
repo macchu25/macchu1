@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --font-raleway: 'Raleway', Arial, Helvetica, sans-serif, .black-gradient;
+  --font-open-sans: 'Open Sans', Arial, Helvetica, sans-serif;
+}
 
 @tailwind base;
 @tailwind components;
@@ -205,4 +211,55 @@ body {
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+@keyframes chat-bounce {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.2;
+  }
+  60% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.chat-bubble-bounce {
+  animation: chat-bounce 0.45s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes dango-bounce-loop {
+  0%, 100% { transform: scale(1);}
+  20% { transform: scale(1.12) rotate(-8deg);}
+  40% { transform: scale(0.95) rotate(6deg);}
+  60% { transform: scale(1.08) rotate(-4deg);}
+  80% { transform: scale(0.98) rotate(2deg);}
+}
+.dango-bounce-loop {
+  animation: dango-bounce-loop 2s infinite cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+/* Scrollbar cho khung chat */
+.custom-chat-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #1976d2 #e3f0fc;
+}
+.custom-chat-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 8px;
+  background: #e3f0fc;
+}
+.custom-chat-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #1976d2 60%, #42a5f5 100%);
+  border-radius: 8px;
+}
+.custom-chat-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #1565c0;
 }
