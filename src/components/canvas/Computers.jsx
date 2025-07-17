@@ -7,6 +7,16 @@ import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
+  // Kiểm tra NaN trong geometry của model
+  computer.scene.traverse((child) => {
+    if (child.isMesh && child.geometry && child.geometry.attributes && child.geometry.attributes.position) {
+      const arr = child.geometry.attributes.position.array;
+      if (Array.from(arr).some(Number.isNaN)) {
+        console.error("NaN found in Computers model geometry!", child);
+      }
+    }
+  });
+
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />

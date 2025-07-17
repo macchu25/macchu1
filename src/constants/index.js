@@ -57,6 +57,7 @@ const services = [
     title: "Content Creator",
     icon: creator,
   },
+   
 ];
 
 const technologies = [
@@ -80,10 +81,7 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+ 
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -116,55 +114,55 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "experiences.starbucks.title",
+    company_name: "experiences.starbucks.company_name",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "experiences.starbucks.date",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "experiences.starbucks.point1",
+      "experiences.starbucks.point2",
+      "experiences.starbucks.point3",
+      "experiences.starbucks.point4",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "experiences.tesla.title",
+    company_name: "experiences.tesla.company_name",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "experiences.tesla.date",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "experiences.tesla.point1",
+      "experiences.tesla.point2",
+      "experiences.tesla.point3",
+      "experiences.tesla.point4",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "experiences.shopify.title",
+    company_name: "experiences.shopify.company_name",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "experiences.shopify.date",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "experiences.shopify.point1",
+      "experiences.shopify.point2",
+      "experiences.shopify.point3",
+      "experiences.shopify.point4",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "experiences.meta.title",
+    company_name: "experiences.meta.company_name",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "experiences.meta.date",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "experiences.meta.point1",
+      "experiences.meta.point2",
+      "experiences.meta.point3",
+      "experiences.meta.point4",
     ],
   },
 ];

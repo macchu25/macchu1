@@ -7,6 +7,16 @@ import CanvasLoader from "../Loader";
 const Earth = () => {
   const earth = useGLTF("./planet/scene.gltf");
 
+  // Kiểm tra NaN trong geometry của model
+  earth.scene.traverse((child) => {
+    if (child.isMesh && child.geometry && child.geometry.attributes && child.geometry.attributes.position) {
+      const arr = child.geometry.attributes.position.array;
+      if (Array.from(arr).some(Number.isNaN)) {
+        console.error("NaN found in Earth model geometry!", child);
+      }
+    }
+  });
+
   return (
     <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
   );
