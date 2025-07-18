@@ -1,4 +1,4 @@
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
@@ -63,11 +63,20 @@ const Footer = () => {
             </button>
           </form>
           <div className="flex gap-4 text-2xl justify-start">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
+            <a href="https://www.facebook.com/mac.nhu.huu.2025" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
               <FaFacebook />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
+            <a href="https://github.com/macchu25" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
               <FaGithub />
+            </a>
+            <a href="https://www.youtube.com/@macchu5880" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
+              <FaYoutube />
+            </a>
+            <a href="https://www.instagram.com/skrttt.macchu_/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
+              <FaInstagram />
+            </a>
+            <a href="https://www.tiktok.com/@macchu_heh" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">
+              <FaTiktok />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition">
               <FaLinkedin />
